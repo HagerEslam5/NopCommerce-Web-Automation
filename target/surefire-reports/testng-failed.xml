@@ -6,6 +6,13 @@
   </listeners>
   <test thread-count="5" name="Regression(failed)" verbose="0">
     <classes>
+      <class name="tests.T05_Cart">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="addProdToCart"/>
+        </methods>
+      </class> <!-- tests.T05_Cart -->
       <class name="tests.T03_Search">
         <methods>
           <include name="searchByAutoSuggs"/>

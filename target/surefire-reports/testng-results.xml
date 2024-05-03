@@ -1,191 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="13" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-03T16:58:04 EEST" name="Suite" finished-at="2024-05-03T16:58:37 EEST" duration-ms="33252">
+  <suite started-at="2024-05-03T18:04:55 EEST" name="Suite" finished-at="2024-05-03T18:05:36 EEST" duration-ms="40428">
     <groups>
     </groups>
-    <test started-at="2024-05-03T16:58:04 EEST" name="Regression" finished-at="2024-05-03T16:58:37 EEST" duration-ms="33252">
+    <test started-at="2024-05-03T18:04:55 EEST" name="Regression" finished-at="2024-05-03T18:05:36 EEST" duration-ms="40428">
       <class name="tests.T05_Cart">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T05_Cart@50d13246]" started-at="2024-05-03T16:58:33 EEST" name="setUp" finished-at="2024-05-03T16:58:35 EEST" duration-ms="1962" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T05_Cart@50d13246]" started-at="2024-05-03T18:05:28 EEST" name="setUp" finished-at="2024-05-03T18:05:33 EEST" duration-ms="4267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchByProdName()[pri:1, instance:tests.T05_Cart@50d13246]" started-at="2024-05-03T16:58:35 EEST" name="searchByProdName" finished-at="2024-05-03T16:58:36 EEST" duration-ms="726" status="PASS">
+        <test-method signature="searchByProdName()[pri:1, instance:tests.T05_Cart@50d13246]" started-at="2024-05-03T18:05:33 EEST" name="searchByProdName" finished-at="2024-05-03T18:05:34 EEST" duration-ms="1317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchByProdName -->
-        <test-method signature="addProdToCart()[pri:2, instance:tests.T05_Cart@50d13246]" started-at="2024-05-03T16:58:36 EEST" name="addProdToCart" finished-at="2024-05-03T16:58:37 EEST" duration-ms="605" status="PASS">
+        <test-method signature="addProdToCart()[pri:2, instance:tests.T05_Cart@50d13246]" started-at="2024-05-03T18:05:34 EEST" name="addProdToCart" finished-at="2024-05-03T18:05:35 EEST" duration-ms="751" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProdToCart -->
-        <test-method signature="verifyProdAddedToCart()[pri:3, instance:tests.T05_Cart@50d13246]" started-at="2024-05-03T16:58:37 EEST" name="verifyProdAddedToCart" finished-at="2024-05-03T16:58:37 EEST" duration-ms="748" status="PASS">
+        <test-method signature="verifyProdAddedToCart()[pri:3, instance:tests.T05_Cart@50d13246]" started-at="2024-05-03T18:05:35 EEST" name="verifyProdAddedToCart" finished-at="2024-05-03T18:05:36 EEST" duration-ms="993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProdAddedToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T05_Cart@50d13246]" started-at="2024-05-03T16:58:37 EEST" name="tearDown" finished-at="2024-05-03T16:58:37 EEST" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T05_Cart@50d13246]" started-at="2024-05-03T18:05:36 EEST" name="tearDown" finished-at="2024-05-03T18:05:36 EEST" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.T05_Cart -->
       <class name="tests.T03_Search">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T03_Search@3f9342d4]" started-at="2024-05-03T16:58:17 EEST" name="setUp" finished-at="2024-05-03T16:58:21 EEST" duration-ms="3560" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T03_Search@3f9342d4]" started-at="2024-05-03T18:05:13 EEST" name="setUp" finished-at="2024-05-03T18:05:16 EEST" duration-ms="3084" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchByProdName()[pri:1, instance:tests.T03_Search@3f9342d4]" started-at="2024-05-03T16:58:21 EEST" name="searchByProdName" finished-at="2024-05-03T16:58:22 EEST" duration-ms="828" status="PASS">
+        <test-method signature="searchByProdName()[pri:1, instance:tests.T03_Search@3f9342d4]" started-at="2024-05-03T18:05:16 EEST" name="searchByProdName" finished-at="2024-05-03T18:05:18 EEST" duration-ms="1299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchByProdName -->
-        <test-method retried="true" signature="searchByAutoSuggs()[pri:2, instance:tests.T03_Search@3f9342d4]" started-at="2024-05-03T16:58:22 EEST" name="searchByAutoSuggs" finished-at="2024-05-03T16:58:23 EEST" duration-ms="1139" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at tests.T03_Search.searchByAutoSuggs(T03_Search.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="searchByAutoSuggs()[pri:2, instance:tests.T03_Search@3f9342d4]" started-at="2024-05-03T18:05:18 EEST" name="searchByAutoSuggs" finished-at="2024-05-03T18:05:19 EEST" duration-ms="1155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchByAutoSuggs -->
-        <test-method signature="searchByAutoSuggs()[pri:2, instance:tests.T03_Search@3f9342d4]" started-at="2024-05-03T16:58:23 EEST" name="searchByAutoSuggs" finished-at="2024-05-03T16:58:24 EEST" duration-ms="1075" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchByAutoSuggs -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T03_Search@3f9342d4]" started-at="2024-05-03T16:58:24 EEST" name="tearDown" finished-at="2024-05-03T16:58:24 EEST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T03_Search@3f9342d4]" started-at="2024-05-03T18:05:19 EEST" name="tearDown" finished-at="2024-05-03T18:05:19 EEST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.T03_Search -->
       <class name="tests.T04_ChangePassword">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T04_ChangePassword@ab7395e]" started-at="2024-05-03T16:58:24 EEST" name="setUp" finished-at="2024-05-03T16:58:28 EEST" duration-ms="3804" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T04_ChangePassword@ab7395e]" started-at="2024-05-03T18:05:19 EEST" name="setUp" finished-at="2024-05-03T18:05:22 EEST" duration-ms="2937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="register(java.util.HashMap)[pri:1, instance:tests.T04_ChangePassword@ab7395e]" started-at="2024-05-03T16:58:28 EEST" name="register" data-provider="getData" finished-at="2024-05-03T16:58:31 EEST" duration-ms="3026" status="PASS">
+        <test-method signature="register(java.util.HashMap)[pri:1, instance:tests.T04_ChangePassword@ab7395e]" started-at="2024-05-03T18:05:22 EEST" name="register" data-provider="getData" finished-at="2024-05-03T18:05:25 EEST" duration-ms="3003" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=H!Uha2k84XByJA, fName=farid, month=9, Lname=ahmed, year=1994, company=twitter, day=5, email=faaridahmed224@gmail.com}]]>
+                <![CDATA[{password=H!Uha2k84XByJA, fName=farid, month=9, Lname=ahmed, year=1994, company=twitter, day=5, email=faaridahmed924@yahoo.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method signature="login(java.util.HashMap)[pri:2, instance:tests.T04_ChangePassword@ab7395e]" started-at="2024-05-03T16:58:31 EEST" name="login" data-provider="getData" finished-at="2024-05-03T16:58:32 EEST" duration-ms="1065" status="PASS">
+        <test-method signature="login(java.util.HashMap)[pri:2, instance:tests.T04_ChangePassword@ab7395e]" started-at="2024-05-03T18:05:25 EEST" name="login" data-provider="getData" finished-at="2024-05-03T18:05:26 EEST" duration-ms="1571" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=H!Uha2k84XByJA, fName=farid, month=9, Lname=ahmed, year=1994, company=twitter, day=5, email=faaridahmed224@gmail.com}]]>
+                <![CDATA[{password=H!Uha2k84XByJA, fName=farid, month=9, Lname=ahmed, year=1994, company=twitter, day=5, email=faaridahmed924@yahoo.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="changePass(java.util.HashMap)[pri:3, instance:tests.T04_ChangePassword@ab7395e]" started-at="2024-05-03T16:58:32 EEST" name="changePass" data-provider="getData" finished-at="2024-05-03T16:58:33 EEST" duration-ms="1186" status="PASS">
+        <test-method signature="changePass(java.util.HashMap)[pri:3, instance:tests.T04_ChangePassword@ab7395e]" started-at="2024-05-03T18:05:26 EEST" name="changePass" data-provider="getData" finished-at="2024-05-03T18:05:28 EEST" duration-ms="1638" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=H!Uha2k84XByJA, fName=farid, month=9, Lname=ahmed, year=1994, company=twitter, day=5, email=faaridahmed224@gmail.com}]]>
+                <![CDATA[{password=H!Uha2k84XByJA, fName=farid, month=9, Lname=ahmed, year=1994, company=twitter, day=5, email=faaridahmed924@yahoo.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePass -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T04_ChangePassword@ab7395e]" started-at="2024-05-03T16:58:33 EEST" name="tearDown" finished-at="2024-05-03T16:58:33 EEST" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T04_ChangePassword@ab7395e]" started-at="2024-05-03T18:05:28 EEST" name="tearDown" finished-at="2024-05-03T18:05:28 EEST" duration-ms="268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.T04_ChangePassword -->
       <class name="tests.T02_Login">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T02_Login@7331196b]" started-at="2024-05-03T16:58:10 EEST" name="setUp" finished-at="2024-05-03T16:58:13 EEST" duration-ms="3474" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T02_Login@7331196b]" started-at="2024-05-03T18:05:04 EEST" name="setUp" finished-at="2024-05-03T18:05:09 EEST" duration-ms="4228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="register(java.util.HashMap)[pri:1, instance:tests.T02_Login@7331196b]" started-at="2024-05-03T16:58:13 EEST" name="register" data-provider="getData" finished-at="2024-05-03T16:58:16 EEST" duration-ms="2780" status="PASS">
+        <test-method signature="register(java.util.HashMap)[pri:1, instance:tests.T02_Login@7331196b]" started-at="2024-05-03T18:05:09 EEST" name="register" data-provider="getData" finished-at="2024-05-03T18:05:12 EEST" duration-ms="3153" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=H!Uha2k84XByJA, fName=mohamed, month=6, Lname=ahmed, year=1990, company=google, day=1, email=mohamedahmed232@yahoo.com}]]>
+                <![CDATA[{password=H!Uha2k84XByJA, fName=mohamed, month=6, Lname=ahmed, year=1990, company=google, day=1, email=mohamedahmed292@gmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method signature="testLogin(java.util.HashMap)[pri:2, instance:tests.T02_Login@7331196b]" started-at="2024-05-03T16:58:16 EEST" name="testLogin" data-provider="getData" finished-at="2024-05-03T16:58:17 EEST" duration-ms="1162" status="PASS">
+        <test-method signature="testLogin(java.util.HashMap)[pri:2, instance:tests.T02_Login@7331196b]" started-at="2024-05-03T18:05:12 EEST" name="testLogin" data-provider="getData" finished-at="2024-05-03T18:05:13 EEST" duration-ms="1338" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=H!Uha2k84XByJA, fName=mohamed, month=6, Lname=ahmed, year=1990, company=google, day=1, email=mohamedahmed232@yahoo.com}]]>
+                <![CDATA[{password=H!Uha2k84XByJA, fName=mohamed, month=6, Lname=ahmed, year=1990, company=google, day=1, email=mohamedahmed292@gmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T02_Login@7331196b]" started-at="2024-05-03T16:58:17 EEST" name="tearDown" finished-at="2024-05-03T16:58:17 EEST" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T02_Login@7331196b]" started-at="2024-05-03T18:05:13 EEST" name="tearDown" finished-at="2024-05-03T18:05:13 EEST" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.T02_Login -->
       <class name="tests.T01_Regirstration">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T01_Regirstration@524f3b3a]" started-at="2024-05-03T16:58:04 EEST" name="setUp" finished-at="2024-05-03T16:58:07 EEST" duration-ms="2841" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T01_Regirstration@524f3b3a]" started-at="2024-05-03T18:04:55 EEST" name="setUp" finished-at="2024-05-03T18:05:00 EEST" duration-ms="5043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="register(java.util.HashMap)[pri:0, instance:tests.T01_Regirstration@524f3b3a]" started-at="2024-05-03T16:58:07 EEST" name="register" data-provider="getData" finished-at="2024-05-03T16:58:10 EEST" duration-ms="2592" status="PASS">
+        <test-method signature="register(java.util.HashMap)[pri:0, instance:tests.T01_Regirstration@524f3b3a]" started-at="2024-05-03T18:05:01 EEST" name="register" data-provider="getData" finished-at="2024-05-03T18:05:04 EEST" duration-ms="3267" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=H!Uha2k84XByJA, fName=sara, month=11, Lname=ali, year=1991, company=microsoft, day=3, email=saarali26@gamil.com}]]>
+                <![CDATA[{password=H!Uha2k84XByJA, fName=sara, month=11, Lname=ali, year=1991, company=microsoft, day=3, email=saarali269@yahoo.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T01_Regirstration@524f3b3a]" started-at="2024-05-03T16:58:10 EEST" name="tearDown" finished-at="2024-05-03T16:58:10 EEST" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T01_Regirstration@524f3b3a]" started-at="2024-05-03T18:05:04 EEST" name="tearDown" finished-at="2024-05-03T18:05:04 EEST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
