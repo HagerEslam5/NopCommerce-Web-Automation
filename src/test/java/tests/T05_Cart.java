@@ -16,7 +16,7 @@ public class T05_Cart extends BaseTest {
 	String SuccMessg = "The product has been added to your";
 	P03_Search search;
 
-	@Test(priority = 1)
+	@Test
 	@Severity(SeverityLevel.MINOR)
 	public void searchByProdName() {
 
@@ -26,7 +26,7 @@ public class T05_Cart extends BaseTest {
 		Assert.assertTrue(flag);
 	}
 
-	@Test(priority = 2, retryAnalyzer = RetryFailures.class)
+	@Test(dependsOnMethods = { "searchByProdName" }, retryAnalyzer = RetryFailures.class)
 	@Severity(SeverityLevel.CRITICAL)
 	public void addProdToCart() {
 		search.chooseProd(prodName);
@@ -34,7 +34,7 @@ public class T05_Cart extends BaseTest {
 		Assert.assertTrue(SuccessMessg.contains(SuccMessg));
 	}
 
-	@Test(priority = 3)
+	@Test(dependsOnMethods = { "addProdToCart" })
 	public void verifyProdAddedToCart() {
 		HomePage homePage = new HomePage(driver);
 		P05_cart cart = homePage.goToCart();
