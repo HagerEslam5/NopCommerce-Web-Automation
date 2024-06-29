@@ -19,7 +19,7 @@ public class T02_Login extends BaseTest {
 	String regMessg = "Your registration completed";
 	String pgTitle = "nopCommerce demo store";
 
-	@Test(priority = 1, dataProvider = "getData")
+	@Test(dataProvider = "getData")
 	@Severity(SeverityLevel.CRITICAL)
 	public void register(HashMap<String, String> input) {
 		HomePage HomePage = new HomePage(driver);
@@ -32,7 +32,7 @@ public class T02_Login extends BaseTest {
 
 	}
 
-	@Test(priority = 2, dataProvider = "getData")
+	@Test(dependsOnMethods = { "register" }, dataProvider = "getData")
 	@Severity(SeverityLevel.CRITICAL)
 	public void testLogin(HashMap<String, String> input) {
 		HomePage HomePage = new HomePage(driver);
