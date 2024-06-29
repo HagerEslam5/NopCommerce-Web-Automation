@@ -20,7 +20,7 @@ public class T04_ChangePassword extends BaseTest {
 	String regMessg = "Your registration completed";
 	String pgTitle = "nopCommerce demo store";
 
-	@Test(priority = 1, dataProvider = "getData")
+	@Test(dataProvider = "getData")
 	@Severity(SeverityLevel.CRITICAL)
 	public void register(HashMap<String, String> input) {
 
@@ -34,7 +34,7 @@ public class T04_ChangePassword extends BaseTest {
 
 	}
 
-	@Test(priority = 2, dataProvider = "getData")
+	@Test(dependsOnMethods = { "register" }, dataProvider = "getData")
 	@Severity(SeverityLevel.CRITICAL)
 	public void login(HashMap<String, String> input) {
 		HomePage HomePage = new HomePage(driver);
@@ -44,7 +44,7 @@ public class T04_ChangePassword extends BaseTest {
 		Assert.assertEquals(title, pgTitle);
 	}
 
-	@Test(priority = 3, dataProvider = "getData")
+	@Test(dependsOnMethods = { "login" }, dataProvider = "getData")
 	@Severity(SeverityLevel.MINOR)
 	public void changePass(HashMap<String, String> input) {
 		P04_ChangePassword changePass = new P04_ChangePassword(driver);
