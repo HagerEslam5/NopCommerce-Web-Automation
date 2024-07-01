@@ -34,7 +34,6 @@ public class T02_Login extends BaseTest {
 	@Test(dependsOnMethods = { "register" }, dataProvider = "getData")
 	@Severity(SeverityLevel.CRITICAL)
 	public void testLogin(HashMap<String, String> input) {
-		HomePage HomePage = new HomePage(driver);
 		P02_Login loginObj = HomePage.goToLogin();
 		loginObj.login(input.get("email"), input.get("password"));
 		String title = loginObj.getPageTitle();
