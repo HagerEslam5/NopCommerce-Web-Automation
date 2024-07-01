@@ -20,7 +20,6 @@ public class T01_Regirstration extends BaseTest {
 	@Test(dataProvider = "getData")
 	@Severity(SeverityLevel.CRITICAL)
 	public void register(HashMap<String, String> input) {
-		HomePage HomePage = new HomePage(driver);
 		P01_Registration Registration = HomePage.goToRegistration();
 		Registration.register(input.get("fName"), input.get("Lname"), input.get("day"), input.get("month"),
 				input.get("year"), input.get("email"), input.get("company"), input.get("password"));
