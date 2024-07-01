@@ -22,9 +22,12 @@ import org.testng.annotations.BeforeClass;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import pages.HomePage;
+
 public class BaseTest {
 
 	public WebDriver driver;
+	public HomePage HomePage;
 
 	public void InitializeDriver() throws IOException {
 		Properties prop = new Properties();
@@ -66,9 +69,10 @@ public class BaseTest {
 	}
 
 	@BeforeClass(alwaysRun = true)
-	public void setUp() throws IOException {
+	public pages.HomePage setUp() throws IOException {
 		InitializeDriver();
 		driver.get("https://demo.nopcommerce.com/");
+		return HomePage = new HomePage(driver);
 	}
 
 	@AfterClass(alwaysRun = true)
