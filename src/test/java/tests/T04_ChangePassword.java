@@ -23,8 +23,6 @@ public class T04_ChangePassword extends BaseTest {
 	@Test(dataProvider = "getData")
 	@Severity(SeverityLevel.CRITICAL)
 	public void register(HashMap<String, String> input) {
-
-		HomePage HomePage = new HomePage(driver);
 		P01_Registration Registration = HomePage.goToRegistration();
 		Registration.register(input.get("fName"), input.get("Lname"), input.get("day"), input.get("month"),
 				input.get("year"), input.get("email"), input.get("company"), input.get("password"));
@@ -37,7 +35,6 @@ public class T04_ChangePassword extends BaseTest {
 	@Test(dependsOnMethods = { "register" }, dataProvider = "getData")
 	@Severity(SeverityLevel.CRITICAL)
 	public void login(HashMap<String, String> input) {
-		HomePage HomePage = new HomePage(driver);
 		P02_Login loginObj = HomePage.goToLogin();
 		loginObj.login(input.get("email"), input.get("password"));
 		String title = loginObj.getPageTitle();
